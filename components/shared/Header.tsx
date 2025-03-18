@@ -5,7 +5,7 @@ import { SearchIcon } from "@/public/assets/icons";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-4 px-[240px] border-b border-[#1a3157]">
+    <header className="flex items-center justify-between py-4 md:px-10 container mx-auto">
       <div className="flex items-center gap-8">
         <div className="flex items-center gap-[50px]">
           <LogoIcon />

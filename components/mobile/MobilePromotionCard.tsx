@@ -3,15 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { PromotionSectionSliderProps } from "../sections/promotion.type";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { DATA_PROMOTIONS } from "@/mockData/dataPromotions";
 
-export default function MobilePromotionSection({
-  contents,
-}: PromotionSectionSliderProps) {
+export default function MobilePromotionSection() {
   return (
-    <div className="md:hidden px-6">
+    <div className="px-6">
       <Swiper
         slidesPerView={1}
         spaceBetween={16}
@@ -30,10 +28,10 @@ export default function MobilePromotionSection({
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {contents.map((content, index) => (
+        {DATA_PROMOTIONS.map((content, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative w-full overflow-visible rounded-[22px] mt-[50px] mb-8"
+              className="h-[427px] relative w-full overflow-visible rounded-[22px] mt-[50px] mb-8"
               style={{
                 backgroundImage: content.bgMobile,
               }}

@@ -14,7 +14,7 @@ export default function MobileLayout() {
     <>
       <MobileHeader />
       <main className="p-4">
-        <MobilePromotionCard contents={CONTENTS} />
+        <MobilePromotionCard />
         <MobileActionButtons />
         <MobileGamesSection />
         <MobileProvidersSection />

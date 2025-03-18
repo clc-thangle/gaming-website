@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#03193a] text-white">
       {/* Desktop View */}
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <DesktopLayout />
       </div>
 
       {/* Mobile View */}
-      <div className="md:hidden">
+      <div className="xl:hidden">
         <MobileLayout />
       </div>
     </div>

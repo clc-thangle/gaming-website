@@ -44,7 +44,7 @@ export default function PromotionSection() {
                     <Button
                       variant="outline"
                       className={cn(
-                        "text-white rounded-full  border-none text-[21px] py-1.5 px-4 h-[41px] transition-all duration-300",
+                        "text-white !bg-[#FFFFFF]/10 rounded-full border-none text-[21px] py-1.5 px-4 h-[41px] transition-all duration-300",
                         promotion.buttonColor
                       )}
                       size="sm"
@@ -52,13 +52,13 @@ export default function PromotionSection() {
                       {promotion.label}
                     </Button>
 
-                    <h1 className="text-4xl md:text-[42px] font-extrabold text-center leading-tight max-w-[420px]">
+                    <h1 className="text-4xl sm:text-[28px] xl:text-[42px] font-extrabold text-center leading-tight max-w-[420px]">
                       {promotion.title}
                     </h1>
 
                     <Button
                       variant="outline"
-                      className="bg-[#ff0960] hover:bg-[#e0085a] border-none rounded-[10px] transition-colors text-white font-bold py-4 px-8 text-xl h-[41px] w-[340px]"
+                      className="bg-[#ff0960] hover:bg-[#e0085a] border-none rounded-[10px] transition-colors text-white font-bold py-4 px-8 text-xl h-[41px] w-auto xl:w-[340px]"
                     >
                       {promotion.buttonText}
                     </Button>

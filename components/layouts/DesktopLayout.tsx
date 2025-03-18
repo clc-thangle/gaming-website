@@ -9,14 +9,14 @@ export default function DesktopLayout() {
   return (
     <>
       <Header />
-      <main className="container md:pt-10 mx-auto">
-        <PromotionSection />
+      <PromotionSection />
+      <main className="container md:pt-10 md:px-10 mx-auto">
         <CategoryButtons />
         <GamesSection />
         <ProvidersSection />
       </main>
       <div className="bg-tech-darker-blue py-[60px]">
-        <div className="container mx-auto ">
+        <div className="container mx-auto md:px-10">
           <HelpCenterSection />
         </div>
       </div>
